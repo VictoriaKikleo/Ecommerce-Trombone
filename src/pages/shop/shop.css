@@ -1,0 +1,60 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.shopTitle {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Bodoni Moda SC', monospace
+}
+.products {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+}
+
+.product {
+  border-radius: 15px;
+  width: 100%; /* Utilisation de 100% pour s'adapter à la largeur de la colonne de la grille */
+  max-width: 300px; /* Largeur maximale pour s'assurer que tous les éléments ne dépassent pas cette largeur */
+  height: auto; /* Hauteur automatique pour conserver le ratio */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px; /* Espacement uniforme autour des éléments */
+}
+.product img {
+  width: 400px;
+}
+
+.product .description {
+  text-align: center;
+  font-family: 'Lato', monospace
+}
+
+.product:hover {
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.addToCartBttn {
+  background-color: transparent;
+  border: 2px solid rgb(19, 19, 19);
+  min-width: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 15px;
+  font-family: 'Lato', monospace
+}
+
+.addToCartBttn:hover {
+  background-color: rgb(19, 19, 19);
+  color: white;
+  cursor: pointer;
+}
